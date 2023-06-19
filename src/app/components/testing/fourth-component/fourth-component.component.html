@@ -1,0 +1,15 @@
+<div class="component">
+    <p>People Data</p>
+    <div class="component">
+        <span>Digite a quantidade de pessoas:</span>
+        <input type="number" name="qtdPeople" id="qtdPeople" min="1" [(ngModel)]="numberOfPeople">
+    </div>
+    <button (click)="handleClick()">Carregar Dados</button>
+    <div class="personList">
+        <div class="person" *ngFor="let person of people"> 
+            <img src="{{person.picture.medium}}" alt="">
+            <span>First name: {{person.name.first}}</span>
+            <span>Last name: {{person.name.last}}</span>
+        </div>
+    </div>
+</div>

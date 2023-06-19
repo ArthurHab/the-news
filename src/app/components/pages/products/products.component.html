@@ -1,0 +1,10 @@
+<app-base>
+    <section class="cardContainer">
+        <app-card *ngFor="let product of products">
+            <img src="{{product.image}}" alt="" class="shortImage">
+            <p class="info">{{product.title}}</p>
+            <p class="price">{{product.price}} USD</p>
+            <button class="button">Buy</button>
+        </app-card>
+    </section>
+</app-base>

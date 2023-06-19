@@ -1,0 +1,25 @@
+<app-base>
+    <section class="newsContainer" *ngIf="!loadingData; else loadingDataSection">
+        <section class="inputSearchTerm">
+            <input type="text" name="searchTerm" id="searchTerm" class="inputText" placeholder="ex: world" [(ngModel)]="searchTerm">
+            <button class="button" (click)="handleClick()">Search</button>
+        </section>
+        <section class="newsCard" *ngFor="let article of news">
+            <p class="newsDate">{{article.publishedAt}}</p>
+            <p class="newsTitle">{{article.title}}</p>
+            <p class="newsDescription">{{article.description}}</p>
+            <p class="newsAuthor">{{article.author}}</p>
+            <div>
+                <a href="{{article.url}}" target="_blank" class="link">
+                    <button class="button">Read more</button>
+                </a>
+            </div>
+        </section>
+    </section>
+    <ng-template #loadingDataSection> 
+        <section class="newsContainer">
+            <h3>Loading...</h3>
+        </section>
+    </ng-template>
+</app-base>
+

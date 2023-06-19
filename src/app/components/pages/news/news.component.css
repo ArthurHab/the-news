@@ -1,0 +1,49 @@
+.newsContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.inputSearchTerm{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsCard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 60vw;
+}
+
+.newsDate{
+    color: rgb(161, 159, 159);
+    font-size: 10px;
+}
+
+.newsTitle{
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.newsDescription{
+    font-size: 16px;
+    color: rgb(173, 173, 173);
+}
+
+.newsAuthor{
+    color: rgb(161, 159, 159);
+    font-size: 12px;
+}
+

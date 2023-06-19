@@ -1,0 +1,15 @@
+<div class="component">
+    <p>Produtos</p>
+    <div class="component">
+        <span>Digite a quantidade de produtos:</span>
+        <input type="number" name="qtdProduct" id="qtdProduct" min="1" [(ngModel)]="numberOfProducts">
+        <button (click)="getProducts()">Recarregar</button>
+    </div>
+    <div class="productList">
+        <div class="product" *ngFor="let product of products">
+            <img src="{{product.image}}" alt="" class="imgProduct">
+            <span>{{product.title}}</span>
+            <span >{{product.price}} USD</span>
+        </div>
+    </div>
+</div>

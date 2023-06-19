@@ -1,0 +1,11 @@
+<div class="component">
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" [(ngModel)]="name">
+        <label for="age">Idade: </label>
+        <input type="number" name="age" id="age" [(ngModel)]="age">
+    </form>
+    <div class="component">
+        <app-third-component [nameReceived]="name" [ageReceived]="age" (clearData)="onClearData()"></app-third-component>
+    </div>
+</div>
