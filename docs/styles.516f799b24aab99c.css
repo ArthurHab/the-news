@@ -1,0 +1,1 @@
+*{box-sizing:border-box;padding:0;margin:0}.component{border:1px solid black;padding:10px;margin-bottom:10px}.button{height:25px;width:100px;border:none;border-radius:10px;background-color:#add5ff;font-weight:700}.button:hover{cursor:pointer;background-color:#5ea8f6}.inputText{border:1px solid rgb(161,159,159);border-radius:10px;height:25px;font-weight:700;padding:0 20px}
